@@ -1,9 +1,173 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Three
-    </ion-title>
+<ion-content>
+  <!-- toolbar start -->
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row class="navbar">
+        <ion-col size="2" align-self-center>
+          <ion-avatar>
+            <img
+              src="https://media.licdn.com/dms/image/C5603AQE81PNQWY9wvQ/profile-displayphoto-shrink_200_200/0?e=1564012800&v=beta&t=LkadPyppQHfhNtmj_UxZ-dwXbwR63GC2iSXgdZ-4JtY"
+            />
+          </ion-avatar>
+        </ion-col>
+        <ion-col size="8">
+          <!-- searchbar -->
+          <ion-searchbar
+            class=""
+            color="light"
+            (input)="getItems($event)"
+          ></ion-searchbar>
+        </ion-col>
+        <ion-col size="2" align-self-center>
+          <ion-icon size="large" name="ios-photos"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
-</ion-header>
-
-<ion-content></ion-content>
+  <!-- toolbar ends -->
+  <ion-grid>
+    <ion-row class="ion-margin-top">
+      <ion-col></ion-col>
+      <ion-col size="4">
+        <ion-avatar class="portfolio ">
+          <img
+            src="https://media.licdn.com/dms/image/C5603AQE81PNQWY9wvQ/profile-displayphoto-shrink_200_200/0?e=1564012800&v=beta&t=LkadPyppQHfhNtmj_UxZ-dwXbwR63GC2iSXgdZ-4JtY"
+          />
+        </ion-avatar>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1 class="align-self-center">Tomasz Świątek</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          aliquid a dolorem, saepe ex eligendi animi, iusto excepturi quis
+          aliquam aut dolor et vero quas perferendis facilis. Odio, magnam. Ex
+          sint debitis aut.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12"
+        ><p class="second-paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          molestias vitae maxime doloremque. Magni, ex! Libero repellendus
+          impedit laborum porro.
+        </p></ion-col
+      >
+    </ion-row>
+    <ion-row>
+      <ion-col size="12"
+        ><p class="skills">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+          laborum?
+        </p></ion-col
+      >
+    </ion-row>
+    <!-- <ion-card class="my-stats">
+      <ion-row>
+        <ion-col size="4">
+          <ion-row>
+            <ion-col size="12">
+              <h3 color="primary">11</h3>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <p>Kto wyświetlił twój profil</p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="4">sasasa</ion-col>
+        <ion-col size="4">sasasas </ion-col>
+      </ion-row>
+    </ion-card> -->
+    <ion-card>
+      <ion-row class="ion-margin">
+        <ion-col size="10"><h5>Wykształcenie</h5></ion-col>
+        <ion-col class="align-self-center" size="2"
+          ><ion-icon name="create" size="large"></ion-icon
+        ></ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img
+                src="http://cspp.put.poznan.pl/img/0/196/871fcf1ec712308d8b3899056604b949/1920x1200.jpg"
+              />
+            </ion-thumbnail>
+            <ion-label>Lorem ipsum dolor sit amet.</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img
+                src="http://cspp.put.poznan.pl/img/0/196/871fcf1ec712308d8b3899056604b949/1920x1200.jpg"
+              />
+            </ion-thumbnail>
+            <ion-label>Lorem ipsum dolor sit amet.</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img
+                src="https://www.eduopinions.com/wp-content/uploads/2017/08/Adam-Mickiewicz-University-in-Pozna%C5%84-UAM-logo.png"
+              />
+            </ion-thumbnail>
+            <ion-label>Lorem ipsum dolor sit amet.</ion-label>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <!-- second card start -->
+    <ion-card>
+      <ion-row class="ion-margin">
+        <ion-col size="10">
+          <h5>Umiejętności</h5>
+        </ion-col>
+        <ion-col class="align-self-center" size="2">
+          <ion-icon name="create" size="large"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-list>
+            <ion-item>
+              <ion-label>Lorem, ipsum dolor.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Lorem, ipsum dolor.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Lorem, ipsum.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Lorem.</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>Lorem ipsum dolor sit.</ion-label>
+            </ion-item>
+          </ion-list></ion-col
+        >
+      </ion-row>
+      <!-- <ion-row>
+        <ion-col size="12"> </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12"> </ion-col>
+      </ion-row> -->
+    </ion-card>
+  </ion-grid>
+</ion-content>
